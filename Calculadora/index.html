@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <title>Calculadora</title>
+</head>
+<body>
+  <form action="" id="calc">
+    <p id="visor"></p>
+    <table id="calcu">
+      <tr>
+        <td><input type="button" value="&#8730;" class="botao ope" onclick="raiz()"></td>
+        <td><input type="button" value="x²" class="botao ope" onclick="potencia()"></td>
+        <td><input type="button" value="C" class="botao lim" onclick="limpar()"></td>
+        <td><input type="button" value="&larr;" class="botao lim" onclick="apaga()"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" class="botao num" onclick="inserir('7')"></td>
+        <td><input type="button" value="8" class="botao num" onclick="inserir('8')"></td>
+        <td><input type="button" value="9" class="botao num" onclick="inserir('9')"></td>
+        <td><input type="button" value="/" class="botao ope" onclick="inserir('/')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" class="botao num" onclick="inserir('4')"></td>
+        <td><input type="button" value="5" class="botao num" onclick="inserir('5')"></td>
+        <td><input type="button" value="6" class="botao num" onclick="inserir('6')"></td>
+        <td><input type="button" value="*" class="botao ope" onclick="inserir('*')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" class="botao num" onclick="inserir('1')"></td>
+        <td><input type="button" value="2" class="botao num" onclick="inserir('2')"></td>
+        <td><input type="button" value="3" class="botao num" onclick="inserir('3')"></td>
+        <td><input type="button" value="-" class="botao ope" onclick="inserir('-')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0" class="botao num" onclick="inserir('0')"></td>
+        <td><input type="button" value="." class="botao ope" onclick="inserir('.')"></td>
+        <td><input type="button" value="=" class="botao igual" onclick="igual()"></td>
+        <td><input type="button" value="+" class="botao ope" onclick="inserir('+')"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
